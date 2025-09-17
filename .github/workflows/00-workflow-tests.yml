@@ -27,3 +27,8 @@ jobs:
       - if: ${{ github.event.inputs.type == 'formal' }}
         name: Formal Greeting
         run: echo "Good day, ${{ github.event.inputs.name }}. I trust you are well."
+      - if: ${{ github.event.inputs.type != 'friendly' && github.event.inputs.type != 'formal' }} 
+        name: Invalid Type
+        run: |
+          echo "Error: Invalid greeting type '${{ github.event.inputs.type }}'. Please use 'friendly' or 'formal'."
+          exit 1
