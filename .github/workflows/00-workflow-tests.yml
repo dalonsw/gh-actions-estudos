@@ -7,11 +7,23 @@ on:
         description: 'Name to greet'
         required: true
         default: 'World'
+      type:
+        description: 'Type of greeting'
+        required: false
+        default: 'friendly'
+        options:
+          - friendly
+          - formal
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Greet user
-        run: echo "Hello, ${{ github.event.inputs.name }}!"
+      - uses: actions/checkout@v3
+      - if: ${{ github.event.inputs.type == 'friendly' }}
+        name: Friendly Greeting
+        run: echo "Hey there, ${{ github.event.inputs.name }}! Hope you're having a great day!"
+      - if: ${{ github.event.inputs.type == 'formal' }}
+        name: Formal Greeting
+        run: echo "Good day, ${{ github.event.inputs.name }}. I trust you are well."
