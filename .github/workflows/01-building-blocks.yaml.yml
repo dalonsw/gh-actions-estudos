@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Say Hello
-        uses: echo "Hello, World!"
+        run: echo Hello, World!
   echo-goodbye:
     runs-on: ubuntu-latest
     steps:
