@@ -1,7 +1,7 @@
 name: Test Workflow
 
 on:
-  workflow-dispatch:
+  workflow_dispatch:
     inputs:
       name:
         description: 'Name to greet'
