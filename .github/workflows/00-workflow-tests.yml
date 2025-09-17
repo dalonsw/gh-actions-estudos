@@ -1,4 +1,4 @@
-name: Test Workflow
+name: 00 - Test Workflow
 
 on:
   workflow_dispatch:
@@ -9,11 +9,11 @@ on:
         default: 'World'
       type:
         description: 'Type of greeting'
-        required: false
-        default: 'friendly'
+        required: true
         options:
           - friendly
           - formal
+        default: friendly
 
 jobs:
   test:
