@@ -1,4 +1,4 @@
-name: CI
+name: Node Self-Hosted Test
 
 on:
   workflow_dispatch:
@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Run a one-line script
-        run: echo Hello, world!
+        run: node /home/vboxuser/app.js
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
