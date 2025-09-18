@@ -1,10 +1,6 @@
 name: 04 - Using Actions
 
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+on: [workflow_dispatch]
 
 jobs:
   build:
@@ -22,3 +18,7 @@ jobs:
       - name: Install Dependencies
         working-directory: 04-using-actions/react-app
         run: npm ci
+      - name: Run Unit Tests
+        working-directory: 04-using-actions/react-app
+        run: npm run test
+      
