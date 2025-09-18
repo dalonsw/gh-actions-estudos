@@ -19,8 +19,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '22.x'
+      - name: Change Directory
+        run: cd .\04-using-actions\react-app
       - name: Install Dependencies
-        run: cd 04-using-actions/react-app
         run: npm ci
 
 
