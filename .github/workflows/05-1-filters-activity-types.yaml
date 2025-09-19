@@ -11,6 +11,7 @@ on:
 jobs:
   check-pr:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check PR Event Type
         run: echo "This workflow was triggered by a pull request event of type '${{ github.event.action }}'."

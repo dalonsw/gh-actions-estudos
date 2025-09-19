@@ -8,12 +8,13 @@ on:
         required: true
         default: 'World'
       type:
-        description: 'Type of greeting'
+        description: 'Type of greeting (friendly or formal)'
         required: true
+        type: choice
+        default: 'friendly'
         options:
           - friendly
           - formal
-        default: friendly
 
 jobs:
   test:
