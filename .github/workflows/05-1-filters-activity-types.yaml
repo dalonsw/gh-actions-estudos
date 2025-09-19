@@ -1,0 +1,16 @@
+name: 05 - 1 - Event Filters and Activity Types
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    branches:
+      - main
+
+jobs:
+  check-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check PR Event Type
+        run: echo "This workflow was triggered by a pull request event of type '${{ github.event.action }}'."
