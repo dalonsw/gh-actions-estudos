@@ -57,7 +57,7 @@ O exame **GH-200: GitHub Actions** valida suas habilidades em criar, usar e gere
 * Compartilhamento e reutilização de workflows entre repositórios
 * Gerenciamento de **segredos organizacionais** e **ambientes**
 * Definição de permissões para workflows e actions
-* Uso de runners em escala (GitHub-hosted x self-hosted)
+* Uso de runners em escala (GitHub-hosted X self-hosted)
 * Boas práticas de **segurança** (ex.: controlar actions de terceiros)
 * Monitoramento e manutenção de workflows e actions
 
