@@ -5,10 +5,11 @@ on:
       branches:
         - main
     workflow_dispatch:
-      debug:
         inputs:
-          type: boolean
-          default: false
+          debug:
+            description: 'Debug mode'
+            type: boolean
+            default: false
 
 jobs:
   echo:
