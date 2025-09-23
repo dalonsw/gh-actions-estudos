@@ -6,7 +6,7 @@ O exame **GH-200: GitHub Actions** valida suas habilidades em criar, usar e gere
 
 ## Estrutura da Prova
 
-* **Formato**: múltipla escolha
+* **Formato**: Múltipla escolha
 * **Questões**: \~40 a 60
 * **Duração**: \~100 minutos
 * **Idioma**: Inglês
