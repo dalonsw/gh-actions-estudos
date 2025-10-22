@@ -1,0 +1,19 @@
+name: Teste
+
+on: workflow_dispatch
+
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        color: [green, pink]
+        animal: [owl, magpie]
+        include:
+          - color: blue
+            animal: owl
+          - color: pink
+            animal: magpie
+    steps:
+      - name: Mostrar combinação
+        run: echo "Color: ${{ matrix.color }} - Animal: ${{ matrix.animal }}"
