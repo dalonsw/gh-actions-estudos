@@ -16,4 +16,5 @@ jobs:
             animal: magpie
     steps:
       - name: Mostrar combinação
-        run: echo "Color: ${{ matrix.color }} - Animal: ${{ matrix.animal }}"
+        run: | 
+          echo Color: ${{ matrix.color }} - Animal: ${{ matrix.animal }}
